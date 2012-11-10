@@ -7,12 +7,15 @@ Simply update the URL of the repository's origin:
 
 	First, back up one commit:
 	$ git reset --hard HEAD^
-	
+
 	Next, change then URL of origin:
 	$ git remote set-url origin git@github.com:aws/aws-sdk-android.git
 
 	Verify it worked
 	$ git remote -v
+	
+	Pull the latest changes
+	$ git pull
 
 	Lastly, move your local repository to the new name (without the "for")
 	$ mv aws-sdk-for-android aws-sdk-android
