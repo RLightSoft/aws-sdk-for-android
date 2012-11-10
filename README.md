@@ -5,10 +5,13 @@ GitHub organization: <http://github.com/aws>. Nothing is lost. Only moved.
 ## What do I do now?
 Simply update the URL of the repository's origin:
 
-	First, change the URL of the origin:
+	First, back up one commit:
+	$ git reset --hard HEAD^
+	
+	Next, change then URL of origin:
 	$ git remote set-url origin git@github.com:aws/aws-sdk-android.git
 
-	Next, verify it worked
+	Verify it worked
 	$ git remote -v
 
 	Lastly, move your local repository to the new name (without the "for")
